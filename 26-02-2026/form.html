@@ -1,0 +1,87 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Form program</title>
+
+</head>
+<body>
+<h1>Register here</h1>
+<fieldset>
+<legend>Registration Form</legend>
+<form>
+<div>
+<label>username <font color="red">*</font></label>
+<input type="text" placeholder="Enter username" required pattern="[a-zA-Z]{5,15}" title="only alphabets are allowed and 5-15chars">
+</div>
+<div>
+<label>Password</label>
+<input type="password" placeholder="Enter password" required>
+</div>
+<div>
+<label>Email</label>
+<input type="email" placeholder="Enter email">
+</div>
+<div>
+<label>phone</label>
+<input type="text" placeholder="Enter phone" required pattern="[6-9]{1}[0-9]{9}">
+</div>
+<div>
+<label>upload resume</label>
+<input type="file">
+</div>
+<div>
+<label>DOB</label>
+<input type="datetime-local">
+</div>
+<div>
+<label>Rating for my Class</label>
+<input type="range" min="0" max="10">
+</div>
+<div>
+<label>Gender</label>
+<input type="radio" name="gen">Male
+<input type="radio" name="gen">Female
+<input type="radio" name="gen">prefer not to say
+</div>
+<div>
+<label>Select your stream</label>
+<select>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>IT</option>
+</select>
+</div>
+<div>
+<label>Select City</label>
+<input list="bs">
+<datalist id="bs">
+<option>Chennai</option>
+<option>Hyderabad</option>
+<option>Vizag</option>
+<option>Indore</option>
+<option>Pune</option>
+<option>Benguluruu</option>
+<option>Gurgon</option>
+<option>Noida</option>
+</datalist>
+</div>
+<div>
+<label>Enter your linkedin profile</label>
+<input type="url" placeholder="Enter linkedin url here">
+</div>
+
+<div>
+<label>Leave a message</label>
+<textarea rows="10" cols="20">
+
+</textarea>
+</div>
+<div>
+<input type="submit" value="Register now">
+<input type="reset" value="Cancel">
+</div>
+</form>
+</fieldset>
+</body>
+</html>

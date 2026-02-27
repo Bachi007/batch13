@@ -1,0 +1,322 @@
+Full Stack...?
+
+Frontend + Backend + Database + unit testing + Devops + Cloud(AWS/GCP/Azure)
+
+
+MEARN
+
+
+
+UI/UX -> Prototype
+Frontend -> HTML, CSS, JS, React, Angular, Bootstrap, Tailwind
+
+Static
+Dynamic
+SPA
+
+Backend ->  Nodejs,Expressjs, Spring,spring boot,hibernate, Django,flask,fastapi,php
+
+WebServer -> API -> REST API-> js,json,xml,text  SOAP API -> xml
+
+GraphQL
+
+Database -> SQL, NoSQL
+
+Containerzation : docker -> code+env=> docker image
+
+
+
+XML, JSON
+
+{
+"key":"value",
+"id":1,
+
+}
+
+<key>
+value
+</key>
+
+<person>
+<firstname>Bhaskara</firstname>
+<city>Hyd<city>
+</person>
+
+
+person={
+"firstname":"bhaskara",
+"city":"Hyd"
+}
+
+
+Vibe coding 
+
+
+HTML
+CSS
+Bootstrap
+JS
+Angular
+MongoDB(client & atlas)
+Node
+Express
+React
+Firebase
+GitHub
+AWS EC2 / Render 
+Gen AI(ai integreations  )
+
+
+website : collection of webpage ..
+
+webpage : webpage is an electronic document which has multimedia,hyper text content which runs over the internet 
+
+-> we have 3 types 
+	Static website : a website which has same content through out a time 
+		ex: portfolios, college portals
+	Dynamic website : a website which can change its content during regular intervals of time 	
+	ex: cricbuzz, weather app..
+	Web application : a dynamic website where the data is exchanged between two entities (system and user)
+	ex: Instagram,facebook,gmail...
+	
+		PWA- Progressive web apps
+		SPA - Single Page apps (serverless or Servered)
+		EE - Enterprise edition apps
+
+
+how a website works ?
+
+
+domain
+storage server 
+browser
+code
+
+157.52.46.02
+
+
+https => http+ssl
+
+
+
+
+
+
+Internet : 
+
+
+1989
+-> CERN -> European Council of Nuclear Research 
+
+-> Tim Berners Lee
+
+-> 1992
+
+SGML -> structure + style => Standard Generalized markup language 
+
+HTML : Hyper text markup language 
+
+Tim Berners Lee 
+
+HTML 5 - 2014 -> multimedia, semantic, iframe 
+
+HTML 4 -> no multimedia, no semantic tags, frameset tag
+
+HTML Basic elements : 
+
+2 basic elements -> Tag, Attribute 
+
+Tag : a unique keyword which enclosed in <>
+-> the tag has two parts opening - <keyword>
+			 closing - </keyword>
+
+-> we have two types of tags -> paired tags/ container/ dependent
+				unpaired tags/ empty/ independent 
+	
+-> paired tags : the tag which has both opening and closing part 
+	ex: <h1></h1>,<p></p>
+-> unpaired tags: the tag which has only opening part 
+	ex: <img>, <br>,<input>,<hr>
+
+
+Attribute : the properties of html tag 
+-> key="value"
+ex: <h1 align="center">Hello World</h1>
+
+html program structure : 
+
+<!doctype HTML> -> declaration tag 
+<html>
+<head>
+// supportive content : styles,scripts,favicon,title,meta 
+</head>
+<body>
+//main content
+</body>
+</html>
+
+Heading tags : 6 types of headings, paired tag
+->the size is different between the tags while h1 is biggest and h6 is smallest heading 
+
+
+paragraph : html doesn't allow whitespaces between the content so to display a content in paragraph wise we need <p></p>
+
+ 
+List tags : ordered list, unordered list, description list
+
+ordered list : follows a sequence for list items
+
+<ol></ol>
+<li></li>
+
+type : A, a, I, i, 1
+start : to start sequence from specific position
+
+Unordered list : not in sequence 
+
+<ul></ul>
+<li></li>
+type:disc,square,circle
+
+
+description list : 
+<dl></dl>
+<dt></dt>
+<dd></dd>
+
+
+Text Formatting in HTML : 
+
+<font></font>
+
+color
+face
+size
+
+strong or bold : <b></b> or <strong></strong>
+italic : <i></i> or <em></em>
+deleted text : <del></del>
+underline : <u></u>
+superscript n subscript : 
+			<sup></sup> 
+			<sub></sub>
+Highlight : <mark></mark>
+
+<bdo></bdo>
+
+Images : 
+
+<img>
+
+src  - source of an image
+alt - alternative text 
+height - to increase/decrease the image height
+width -  to increase/decrease the image width
+title - to display tooltip
+
+jpg - joint photographic group
+jpeg - joint photographic expert group
+png - portable network graphics
+webp - webpage images
+gif - graphical interchange format
+svg - scalable vector graphics 
+
+Hyperlinks : hyperlinks are the clickable text in html webpage which is used for navigation among the webpages or within the webpage
+
+<a></a> - anchor tag
+
+href - hyperlink reference, the url of targeted webpage
+target - used to load the webpage in same tab or new tab
+title - to display tooltip
+
+
+img-> href
+href-> image address
+a->img
+img->a
+
+Table : collection of rows and columns 
+
+table-> <table></table>
+table rows-><tr></tr>
+table heading-><th></th>
+table columns-><td></td>
+<thead></thead>
+<tbody></tbody>
+
+border - to add border to the table, specifies width of the border
+cellpadding - to increase space between the content and border of the each cell
+cellspacing - to increase space between two cells of a table
+colspan- merging of n num of columns into one
+rowspan
+
+Multimedia : text, images, videos, audios, animation
+
+Videos : offline videos 
+
+-> mp4 ()
+
+-> <video></video>
+-> 	<video>
+	<source src="" type="video/mp4">
+	</video>
+
+
+Audio : offline audio
+-> mp3
+	<audio>
+	<source src="" type="audio/mp3">
+	</audio>
+
+
+iframe : used to display the content from external sources 
+<iframe></iframe>
+
+src
+height
+width
+
+Accordion : 
+
+<details>
+<summary></summary>
+
+</details>
+
+
+GitHub : version controlling, deployment, ci/cd, contributors 
+
+
+
+GitHub account + git for windows 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
