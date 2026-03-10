@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            }
+        img:hover{
+           filter:drop-shadow(5px 5px 10px black);
+        
+        }
+
+       @media only screen and (min-width:720px){
+             .container{
+            display:flex;
+            flex-direction: row;
+            border:3px solid blue;
+            flex-wrap: wrap;
+        }
+        .child{
+            border:1px solid red;
+            padding:15px;
+        }
+       }
+       @media only screen and (max-width:720px){
+              .container{
+            display:flex;
+            flex-direction: column;
+           
+            border:3px solid blue;
+            flex-wrap: wrap;
+        }
+        .child{
+            border:1px solid red;
+            padding:15px;
+        }
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="child" style="flex-grow: 4;order:5"><img src="msd.webp" height="200" width="200" alt=""></div>
+        <div class="child" style="flex-grow: 2;order:4"><img src="rohit.webp" height="200" width="200" alt=""></div>
+        <div class="child" style="flex-grow: 2;order:1"><img src="virat.webp" height="200" width="200" alt=""></div>
+        <div class="child" style="order:2"><img src="klr.jpg"  height="200" width="200" alt=""></div>
+        <div class="child" style="order:6"><img src="shreyas.webp" height="200" width="200" alt=""></div>
+        <div class="child" style="order:3"><img src="sky.webp" height="200" width="200" alt=""></div>    
+    </div>
+</body>
+
+</html>
