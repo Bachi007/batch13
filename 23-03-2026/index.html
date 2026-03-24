@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h1 id="myh1">Joke : </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-primary" onclick="getJoke()">Get New Joke</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function getJoke()
+        {
+
+            fetch("https://api.chucknorris.io/jokes/random ")
+            .then((data)=>data.json())//converting readable stream of data into json 
+            .then((res)=>{console.log(res)
+                document.getElementById("myh1").innerHTML="Joke : "+res.value
+            })
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

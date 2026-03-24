@@ -291,6 +291,768 @@ GitHub : version controlling, deployment, ci/cd, contributors
 
 GitHub account + git for windows 
 
+Forms : form tag used to collect the data and perform client side data validations, form has different ways of collecting data using input,textarea,select,datalist etc..
+
+<form>
+
+</form> 
+
+input tag:  
+
+type-> text,number,email,password,file,color,date,datetime-local, time, radio, checkbox, url, range, submit, reset
+
+placeholder->watermark text
+
+name, id -> to read user input in js 
+
+required -> mandatory field
+
+pattern -> to write regular expressions to validate user input
+
+
+Character : 
+
+	[a-zA-Z] -> both uppercase and lowercase letters are allowed
+	[a-zA-Z0-9] -> 
+	[0-9]
+	[a-zA-Z]+ -> atleast one letter or more 
+	[a-zA-Z@#]* -> zero or more 
+
+counter 
+	{5,} -> minimum 5 chars 
+	{,15} -> max 15 cahrs
+	{5,15} -> min 5 max 15
+	{6} -> only 6 chars
+
+Block and Inline elements : 
+
+Block : 
+
+1. Block elements always starts from new line 
+2. Block elements always occupy complete screen width
+3. Block elements has default padding 
+
+elements : all heading tags,p,table,li, div, header,nav,section,fieldset,footer,form, figure
+
+header - represents group  of headings of the webpage
+nav - create navigation using hyperlinks in the webpage
+div - a container tag which represents specific part
+section - main container of the webpage, which divides webpage into multiple parts
+fieldset - it is also a container like div but it has border and legend
+footer - represents footer of the webpage which has quick links, credits,copyrights etc...
+
+<h1><font></font></h1>
+
+one block can have multiple inline elements 
+
+
+<figure>
+<img src="" srcset=[]>
+<figcaption></figcaption>
+</figure>
+
+Inline elements : 
+1. Inline element starts from existing line 
+2. it occupy only required width
+3. it doesn't have padding by default
+
+elements : input,img,label,span,a,b,font,i,u...
+
+
+
+
+
+
+
+
+
+CSS : Cascading Stylesheet
+
+->Hakon Wium Lee -> 1994
+
+CSS 3 -> 2011
+
+flexbox, grid, gradients, animations, transitions 
+
+->css mainly used to create styling or decorate the webpage structure 
+-> 3 types of css -> Inline, Internal, External 
+
+Inline : within html element we can write css properties using style as an attribute 
+
+css- key:value;
+html - key="value"
+
+<h1 style="color:red;">Hello World</h1>
+
+Internal : within the head tag we can create blocks of css in style tag, those blocks of css need to apply to html elements 
+
+css selectors : selector is a keyword which is used to apply a block of css to a html element 
+
+->types of selectors 
+	tag name selector
+	class name selector
+	id name selector
+	universal selector
+	combinational selector
+	
+
+tag name selector: byusing tag name of a html element we can apply block of css to the element 
+
+h1{
+color:red;
+}
+
+class selector: we can select individual elements using its class name to apply a block of css, here we need to use a delimiter called .(dot) to represent class
+-> class name can be duplicate 
+
+id: we can select one unique element using it to apply a block of css, here id cannot be duplicate, we need to use a delimiter called #(hash) to represent id
+
+universal : to apply a block of css to every element in the document, universal identified by * as delimiter
+
+
+
+specificity : it is an algorithm used by browser to identify which css rule needs to apply for an element when multiple css rules are targeting same element 
+
+
+inline : (1,0,0,0)
+id : (0,1,0,0)
+class : (0,0,1,0)
+tag: (0,0,0,1)
+
+!important 
+
+CSS Backgrounds : 
+
+background-color : used to set color for background of any element in document
+background-image : used to set image as background
+background-repeat : to control repetition of the image(if smaller in size)
+			repeat/no-repeat/repeat-x/repeat-y
+background-position : to change the position of background image in document
+		top right,top left,top center,center,bottom left,bottom right,bottom center
+background-size : to control size of the background
+			cover/1200px 700px
+background-attachment : to set background image is fixed or scrollable 
+			fixed/scroll
+
+
+gradients : linear-gradient, radial-gradient 
+	linear : used to set multiple colors as background in linear order
+
+
+LCP : Largest contentful paint
+
+TTFB: time taken to receive first byte
+
+Colors : 
+	one modern web browser can support 140 named colors, we can design colors using 4 ways in  css
+	1. color name
+	2. RGB
+	3. HEXA
+	4. HSL
+
+RGB : Red, Green, Blue
+	-0-255
+	rgb(0,255,0)
+            background-color: rgb(255,255,255);
+        background-color: rgb(0,0,0);
+                background-color: rgb(120,155,55);
+
+HEXA : HEXA DECIMAL : 16->A-F0-9
+	#rrggbb -> F high,0 low
+	#ff0000
+	#00ff00
+	#0000ff
+	#ffffff
+	#000000
+
+HSL : Hue, Saturation, Lightness 
+	hue- 0-360
+	saturation-intensity of the color - 0-100%
+	lightness-brightness of the color - 0-100%
+	hsl(125,50,50)
+
+alpha - transparency: 0-1  
+
+text-formatting :
+
+to change color of the text - color:red;
+to change size of the text - font-size:20px;
+to change font face - font-family:chiller;
+to create bold text - font-weight:900;
+to create as italic - font-style:italic;
+to transform letters to different case: text-transform:uppercase/lowercase/capitalize;
+to increase space between letters of a word: letter-spacing:20px;
+to increase space between words of paragraph:word-spacing:20px;
+to increase height of the lines of paragraph: line-height:25px;
+to create indentation to the text: text-indent:20px;
+to add underline to the text: text-decoration:underline/none/overline/line-through
+to add shadow to the text: text-shadow:2px 2px black;
+to change alignment of the text: text-align:center/left/right;
+
+
+
+
+
+Box Model : 
+
+Margin : the space between sides of the webpage and content, it is also defined as external space of any element
+
+Padding : the space between content and border, internal space of an element
+
+Border : the line around the padding 
+
+Outline : the line around the border, the space between border and outline is outline-offset
+
+
+
+margin : 
+margin-left
+margin-right
+margin-top
+margin-bottom 
+
+shorthand : margin:50px ;
+
+padding: 
+
+border:
+
+border-width:2px;
+border-style:solid/double/dotted/dashed/inset/outset
+border-color:red;
+
+
+border-collapse:collapse/no-collapse//remove excessive lines in the border of the table
+
+border-radius:50px//curved edges
+
+
+Pseudo classes : pseudo classes represents special state of an element, to represent pseudo classes we use : (colon) as delimiter 
+
+-> hyperlink has most number of special states in webpage (visited,not visited, hover,active)
+
+list of pseudo classes 
+
+link : used to represent unvisited state of anchor tag
+
+visited: represents visited state of anchor tag
+
+hover: represents user moves cursor on the element
+
+active: represents a click 
+
+nth-child
+
+pseudo element : to apply styles for special part of an element, we use :: 
+
+-> first-line
+-> first-letter
+-> before
+-> after
+-> placeholder
+-> selection
+
+Display in css :display property is used to specify the display behaviour of html elements
+
+display:inline/block/inline-block/none
+
+
+CLS : cumulative Layout shift 
+
+
+z-index:used to give priority to bring an element front in the stack order 
+
+
+Positions : positions used to define how an element is positioned on the document 
+
+position:static/absolute/relative/fixed/sticky
+->the default position value of any html element is static 
+
+position:realtive -> an positioned in the normal document flow	
+position:absolute -> element positioned according to previous/next ancestor elements, element removed from normal document flow
+position:static -> the default position value, where left,top,right,bottom values not effected
+position:fixed -> an element fixed at specific position even page is scrolled 
+position:sticky -> relative+fixed, it will scroll the content but whenever it reaches certain point, it will be fixed
+
+
+Overflow : overflow property is used to control the content which is ignoring the default sizes of the container 
+overflow:hidden/scroll/auto/none
+
+
+box sizing : box sizing is used specify how an element size is calculated either including padding and border or excluding padding 
+
+box-sizing: content-box/border-box
+
+content-box: height+width+content (padding not included)
+border-box: height+width+content+padding
+
+media queries 
+
+flex box : flexbox is a layout structure in css for responsive designing, to control child elements alignment effectively 
+
+flex-direction : row/row-reverse/column/column-reverse
+flex-wrap:wrap/no-wrap/wrap-reverse
+justify-content:center/flex-start/flex-end/space-around/space-between
+align-items:center/flex-start/flex-end/space-around/space-between
+order:number(used to display child elements on priority)
+flex-grow: used to share the remaining space by child elements 
+
+
+Media Queries in css : 
+
+responsive web designing - a webpage which can change its template based on the viewport(screen size) of the user
+->to create responsive webpages in css we use media queries 
+
+
+
+	1200px
+
+-> min-width:720px >=-> background-color:blue;
+   max-width:720px <=-> background-color:green;
+
+<meta name="viewport" content="width=device-width,intial-scale=1.0"> 
+
+transform : transform in css used to change the position, rotation, size of the element without disturbing other elements 
+
+
+transform : translate/rotate/scale/skew 
+
+translate : used to change the position of an element using coordinates in the document 
+translateX(), translateY(), translate()
+
+rotate : used rotate an element on both clockwise and anticlockwise direction
+rotate(120deg)
+
+scale : used to increase the size of the element 
+scale(),scaleX(),scaleY()
+
+1-default size
+1.5-> 150% 
+0.5 -> 50%
+
+skew : used to tilt an element 
+
+skew()
+
+transition : transition is used to apply smooth changes to an element 
+
+filters : used to edit the images on the document 
+
+filter: blur(px), brightness(%),contrast(%),sepia(%),invert(%),grayscale(%),hue-rotate(deg),drop-shadow(px)
+
+Animation : animation is a technique to change styles of an element over the time using keyframes without user interaction
+
+-> animations created using a special block of code called @keyframes 
+
+div -> animation-name
+
+
+@keyframes drf{
+	to{}
+	from{}
+
+}
+
+
+firebase : firebase is paas offered by google 
+
+	firestore: realtime database
+	cloud functions: serverless application
+	firebase authentication service: for login, signup authentication 
+	deployment : to publish websites 
+
+
+deployment : Nodejs -> npm
+	
+
+project -> 10 -> public -> index.html
+
+
+Bootstrap : 
+
+
+xs - extra small screen
+sm - small screen
+md - medium screen
+lg - large screen 
+xl - extra large screen 
+
+
+
+.container -> .row -> 12
+
+col-md-5 col-xl-8 h1, 
+col-md-7 col-xl-4 p
+
+md >=
+
+1720
+
+min-width:720px
+
+div -> col-12  col-md-5 col-xl-6
+
+
+
+xs - 12
+sm - 12
+md - 5
+lg - 5 
+xl - 6
+
+
+lets start bootstrapping ?
+
+before applying bootstrap we need to make sure about two things in webpage 
+
+1. meta viewport 
+2. apply bootstrap cdn 
+
+
+bootstrap colors : 
+
+warning-yellow
+danger-red
+success-green
+primary-blue
+secondary-grey
+dark - black
+light - white
+
+bg-danger
+
+
+
+grid system : 
+
+container > n of rows > every row has 12 columns 
+
+
+p-1
+p-5
+ps-1
+pt-1
+pb-1
+pe-1
+
+text-danger/warning/primary....
+text-center/start/end
+
+m-1
+m-5
+
+ms
+mt
+mb
+me
+
+text formatting : 
+
+
+text color: text-primary/warning/danger...
+
+text transform : text-uppercase/lowercase/capitalize
+
+text alignment : text-start/center/end
+
+font size : fs-1/fs-2...fs-6
+
+font weight: fw-thin/fw-normal/fw-bold
+
+font style : fst-italic/fst-normal
+
+text decoration : text-decoration-underline/text-decoration-line-through/none
+
+
+image classes : img-fluid/img-thumbnail/rounded/rounded-circle
+
+border : border + border-primary/border-warning/... 
+	 border size: border-1/border-2...
+	border radius : rounded-1/rounded-2... rounded-5
+
+
+table : table table-bordered/table-hover
+	colors: table-dark/table-primary/table-warning....
+
+
+buttons : btn + btn-warning/btn-primary.....
+	 grouping : btn-group/btn-group-vertical
+	size : btn-lg
+
+card :  
+	card > card-header + card-body + card-footer
+	img: card-img-top
+	title : card-title
+
+
+alerts : 
+	bootstrap.min.js+jquery+popperjs
+	bootstrap.bundle.min.js
+
+collapse : 
+
+
+dropdown : 
+
+
+
+navbar :     basic + hamburger 
+
+collapse
+
+forms : form > div.form-group>label.form-label+input.form-control
+
+modals : 
+
+display : 
+1260*720
+
+1000
+
+limit=100
+page=2
+
+skip=(page-1)*limit => 1*100
+
+page 1= 0-100
+page 2=101-200
+page 3=201-300
+
+
+JavaScript : 
+
+Brenden Eich 
+
+Netscape -> 10days -> Mocha -> LiveScript -> javaScript 
+
+
+1990s -> IE -> Jscript - JavaScriptrunner 
+
+Mozila -> js -> ECMA international -> ECMA script -> 1997 - spidymonkey
+
+Chrome -> V8
+
+JavaScript - ES2024 (ES6)
+
+-> browser-> URL -> server -> html -> DOM tree -> JSEngine (runs js code written in html) 
+
+
+Event Loop :
+
+
+int a=7;
+
+a="bhaskar"
+
+var a=7;
+
+a="bhaskar"
+
+javascript is a high level programming language which is single threaded and dynamically typed, javascript is synchronous by nature but it support async features by using different web apis 
+
+-> initially before nodejs javascript is used as client side scripting(frontend) but after nodejs we can run javascript at server side too(backend)
+
+->nodejs is a runtime environment to run js outside of the browser 
+ 
+
+uses of javascript :
+->Data Validations 
+->DOM manipulations 
+->Error Handling 
+->Async features 
+-> server side development (RESTful webservices)
+-> File Handling 
+
+JavaScript eco system
+
+frontend : Angular, React, Vue, Ember, nextjs
+mobile apps: React native, iconic 
+desktop apps: tauri, electronjs 
+backend: nodejs, expressjs, deno, nest
+testing: Jasmine, Karma 
+AI: brain.js, tensorflowjs 
+3d library : d3js,threejs 
+
+
+How can we integrate js to html 
+
+	-> internal js 
+	-> external js 
+
+output statements :
+
+4 -> 
+	document.write
+			here document is an active webpage in the browser, write is a method to create and display the content in the document 
+		
+	innerHTML:we can pass html content to already existing element
+	alert
+	console.log	
+
+
+variables : a variable is named storage container to store values during the execution of the program
+
+-> 3 types of variable 
+	local 
+	global
+	functional 
+
+local variables : a variable which declared inside of a method or block of code 
+		  -> to represent local variables we declare with let keyword 
+
+global variables : a variable which declared outside of a block of code 
+		  -> to represent global variables we declare with var keyword
+
+HOISTING : the process of moving all the declarations to the top of the scope, we can use variables before its declaration
+
+TDZ : temporal dead zone : the time difference between declaring and initializing the variables which declared with let and const, the variable cannot be accessed in this time interval 
+
+
+Operators : a math symbol which performs some calculations between operands 
+
+types : 
+
+Arithmetic : +,-,*,/,%,** 
+
+	/
+	%
+	5%2=1
+	5/2=2
+
+
+Relational : >,>=,<,<=,==,===,!=,!==
+
+= -> assignment operator
+== -> compare values and return Boolean
+=== -> compare value and datatype and returns Boolean 
+
+
+Logical : &&, ||, !
+
+&& -> both conditions must be true then it returns true otherwise false
+
+a,b,c
+
+a>b && a>c
+
+
+
+|| -> any one condition has to be true then it returns true
+
+a<b || a<c
+
+
+true -> if n is non zero values, non empty strings 
+
+false -> if n is zero, an empty string, null, undefined 
+
+
+Assignment :  =, +=,-=,....
+
+a=a+5;
+a+=5
+
+Bitwise 
+Increment & Decrement :
+
+pre increment : ++a;
+
+post increment : a++;
+
+Conditional : 
+
+condition ? true:false
+
+Bitwise :
+
+	& (AND) - whenever both bits are 1 it returns 1 otherwise returns 0
+
+	| (OR) - whenever atleast one bit is 1 then it returns 1 otherwise 0
+
+	^ (XOR) - whenever both bits are different it returns 1 otherwise 0
+
+	~ (NOT) - -(n+1)
+
+Control Statements : the statements which is used to control the flow of the execution 
+
+-> js has 2 types of control statements -> conditional, Iterative 
+
+
+	conditional - we can execute different blocks of code based on the result of condition
+			- if, if-else, nested if else, if else ladder, switch
+
+	Iterative - we can execute a block of code until the condition is satisfied
+			- for, while, do-while, for in, for of 
+
+if: if is a block of code, the condition specified in the if statement satisfied it will execute body of the if 
+
+if(true)
+{
+//body
+
+}
+
+Iterative :
+
+for -> for loop is used to execute a block of code until the condition is satisfied, here for loop is used when number of iterations are known 
+
+
+->for loop has init, condition, body of the loop, increment/decrement 
+
+syntax : for(init;condition;icr/dcr)
+	{
+		//body of the loop
+	}
+
+
+Arrays : 
+
+2 -> Array literals
+     with new reference 
+
+array literals : var arr=[5,7,12,30,46,42];
+
+with new reference : var arr=new Array();
+			arr[0]=2	
+			arr[1]=3
+
+
+Array Destructuring : the process of dividing a complex structure into smaller parts
+
+Spread : complex structure dividing into pieces 
+
+Rest : pieces combined into complex structure
+
+
+Array Methods 
+
+push : to insert an element at end of the array 
+pop : to remove an element at end of the array
+shift:to remove an element at beginning  of the array
+unshift: to insert an element at beginning of the array 
+splice : we can add or remove elements at any position of the array
+	splice(start pos,no of elements to delete,elements to insert);
+
+delete :
+slice : to create subarray from starting index and ending
+indexOf : will return index of first occurrence of the element
+lastIndexOf : index of last occurrence of the element
+sort
+reverse
+join
+concat
+
+ForEach
+map
+reduce
+filter
+findIndex
+find
+every
+some
+
+
+
 
 
 
